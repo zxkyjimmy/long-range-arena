@@ -17,12 +17,12 @@ from collections.abc import Iterable  # pylint: disable=g-importing-member
 
 from absl import logging
 
-from flax.deprecated import nn
-from flax.deprecated.nn.attention import _CacheEntry
-from flax.deprecated.nn.attention import _make_causal_mask
-from flax.deprecated.nn.attention import Cache
-from flax.deprecated.nn.attention import make_padding_mask
-from flax.deprecated.nn.stochastic import make_rng
+from flax import nn
+from flax.nn.attention import _CacheEntry
+from flax.nn.attention import _make_causal_mask
+from flax.nn.attention import Cache
+from flax.nn.attention import make_padding_mask
+from flax.nn.stochastic import make_rng
 import jax
 from jax import lax
 from jax import random

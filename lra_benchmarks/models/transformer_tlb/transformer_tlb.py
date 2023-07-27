@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 """Transformer-based stateful lra models."""
-from flax.deprecated import nn
+from flax import nn
 import jax
 import jax.numpy as jnp
 from lra_benchmarks.models.layers import common_layers

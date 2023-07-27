@@ -15,7 +15,7 @@
 import functools
 
 from absl import logging
-from flax.deprecated import nn
+from flax import nn
 import jax.numpy as jnp
 from lra_benchmarks.models.layers import common_layers
 from lra_benchmarks.models.performer import performer_attention

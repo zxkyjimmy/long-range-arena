@@ -14,7 +14,7 @@
 """Attention modules for Reformer model."""
 
 from absl import logging
-from flax.deprecated import nn
+from flax import nn
 import jax
 import jax.numpy as jnp
 from jax.scipy.special import logsumexp

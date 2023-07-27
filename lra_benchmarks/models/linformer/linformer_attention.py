@@ -13,8 +13,8 @@
 # limitations under the License.
 """Custom Attention core modules for Flax."""
 
-from flax.deprecated import nn
-from flax.deprecated.nn.attention import dot_product_attention
+from flax import nn
+from flax.nn.attention import dot_product_attention
 from jax import lax
 import jax.numpy as jnp
 

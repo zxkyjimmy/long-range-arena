@@ -13,7 +13,7 @@
 # limitations under the License.
 """Custom Attention modules for Linear Transformer."""
 
-from flax.deprecated import nn
+from flax import nn
 import jax.numpy as jnp
 
 
