@@ -1,3 +1,6 @@
+lra_release.gz
+lra_release/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
