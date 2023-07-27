@@ -143,6 +143,7 @@ def main(argv):
     raise app.UsageError('Too many command-line arguments.')
 
   tf.enable_v2_behavior()
+  tf.config.experimental.set_visible_devices([], "GPU") 
 
   config = FLAGS.config
   logging.info('===========Config Dict============')
