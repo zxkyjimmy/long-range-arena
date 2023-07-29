@@ -1,3 +1,37 @@
+# Long-Range Arena Container
+This is a fork of Google Long-Range Arena intended to provide future users with a container in which to execute code.
+
+## Getting Started
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
+### Prerequisites
+- podman (or docker)
+### Get the source code
+```bash
+git clone https://github.com/zxkyjimmy/long-range-arena
+cd long-range-arena
+```
+### Download the dataset
+```bash
+wget https://storage.googleapis.com/long-range-arena/lra_release.gz
+tar zxvf lra_release.gz
+```
+
+## Usage
+- Start the container
+```bash
+podman run --rm -it -v $PWD:/elra zxkyjimmy/elra
+```
+- Run a task
+```bash
+PYTHONPATH="$(pwd)":"$PYTHON_PATH" python lra_benchmarks/listops/train.py \
+      --config=lra_benchmarks/listops/configs/transformer_base.py \
+      --model_dir=/tmp/listops \
+      --task_name=basic \
+      --data_dir=lra_release/listops-1000/
+```
+
+
+# Original README
 ## Long-Range Arena (LRA: pronounced ELRA).
 
 Long-range arena is an effort toward systematic evaluation of efficient
