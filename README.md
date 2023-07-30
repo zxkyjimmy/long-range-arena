@@ -2,7 +2,7 @@
 This is a fork of Google Long-Range Arena intended to provide future users with a container in which to execute code.
 
 ## Getting Started
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
+Follow these instructions to obtain a copy of the project and run it on your local machine for development and testing.
 ### Prerequisites
 - podman (or docker)
 ### Get the source code
